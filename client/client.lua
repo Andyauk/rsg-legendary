@@ -13,7 +13,7 @@ Citizen.CreateThread(function()
         Wait(500)
         modelrequest( GetHashKey(Config.SpawnAnimal[z]["Model"]) )
     end
-    local npc = CreatePed(GetHashKey(Config.SpawnAnimal[z]["Model"]), Config.SpawnAnimal[z]["Pos"].x, Config.SpawnAnimal[z]["Pos"].y, Config.SpawnAnimal[z]["Pos"].z, Config.SpawnAnimal[z]["Heading"], false, false, 0, 0)
+    local npc = CreatePed(GetHashKey(Config.SpawnAnimal[z]["Model"]), Config.SpawnAnimal[z]["Pos"].x, Config.SpawnAnimal[z]["Pos"].y, Config.SpawnAnimal[z]["Pos"].z, Config.SpawnAnimal[z]["Heading"], true, true, 0, 0)
     while not DoesEntityExist(npc) do
         Wait(300)
     end
