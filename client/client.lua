@@ -18,6 +18,7 @@ Citizen.CreateThread(function()
         Wait(300)
     end
     Citizen.InvokeNative(0x283978A15512B2FE, npc, true)
+	Citizen.InvokeNative(0xDC19C288082E586E, npc, true, false)
 	Citizen.InvokeNative(0xBB9CE077274F6A1B, npc, 10.0, 10)
     SetModelAsNoLongerNeeded(GetHashKey(Config.SpawnAnimal[z]["Model"]))
     end
