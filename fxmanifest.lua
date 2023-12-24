@@ -4,10 +4,22 @@ game 'rdr3'
 
 author 'RexShack#3041'
 description 'rsg-legendary'
+version '1.0.1'
 
-client_script {
-	'client/client.lua',
+client_scripts {
+    'client/*.lua'
+}
+
+server_scripts {
+    'server/*.lua'
+}
+
+shared_scripts {
 	'config.lua'
+}
+
+dependencies {
+    'rsg-core'
 }
 
 lua54 'yes'
