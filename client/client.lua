@@ -1,4 +1,4 @@
-local QRCore = exports['qr-core']:GetCoreObject()
+local RSGCore = exports['rsg-core']:GetCoreObject()
 
 function modelrequest( model )
     Citizen.CreateThread(function()
